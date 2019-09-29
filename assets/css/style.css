@@ -140,7 +140,7 @@ h3, h2 {
     position: relative;
     float: left;
     width: 275px;
-    margin: 20px 0 25px;
+    margin: 20px 0 25px ;
     overflow: auto;
 }
 
@@ -180,7 +180,7 @@ h3, h2 {
 /* contact page */
 
 #contact-form ul {
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 #contact-form li {
@@ -216,3 +216,59 @@ input[type=submit] {
     background: #4aaaa5;
     border: 0 none;
 }
+
+/* media queries */
+
+@media (max-width: 640px) {
+
+    /* about */
+    #logo {
+        margin-left: 0 0 0;
+        margin-right: 0 0 0;
+        padding: 0 auto;
+        width: 100%;
+        position: static;
+    }
+
+    #masthead {
+        margin: 0 0 0;
+        padding: 0 0 0;
+        text-align: center;
+        float: center;
+    }
+
+    .auth-img {
+        width: 100%;
+    }
+
+    /* unable to get the nav links to go to the center.. */
+    nav {
+        float: center;
+    }
+
+    /* portfolio */
+
+    .work img {
+        width: 100%;
+        float: center;
+    }
+
+    .work {
+        float: center;
+        width: 100%;
+        margin: 20 5 20 5;
+    }
+
+    .main-section {
+        margin-top: 35px;
+    }
+
+}
+ 
+
+@media (max-width: 768px) { ... }
+@media (max-width: 980px) { ... }
+
+/* In some of the sample pics for 768px and 960px, it looked like
+the main-container is floating to the top-left(?) but I kept mine in
+the middle */
